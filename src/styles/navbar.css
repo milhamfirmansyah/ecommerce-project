@@ -1,7 +1,8 @@
 .nav-wrapper {
   width: 100%;
   padding: 40px 0 16px 0;
-  border-bottom: 1.6px solid #f5f5f5;
+  border-bottom: 1px solid #d2d2d2;
+  position: fixed;
 }
 
 .nav-container {
@@ -36,6 +37,11 @@
   color: #000;
 }
 
+.active {
+  border-bottom: 1.6px solid #db4444 !important;
+  color: #db4444 !important;
+}
+
 .nav-right {
   display: flex;
   gap: 16px;
@@ -47,11 +53,22 @@
 }
 
 .search-input input {
-  padding: 7px 70px 7px 20px;
+  padding: 7px 20px 7px 20px;
   border-radius: 4px;
   background-color: #f5f5f5;
-  width: 258px;
+  width: 308px;
   border: none;
+}
+
+.search-input input::placeholder {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.search-input input:focus + .search-icon i {
+  display: none;
 }
 
 .search-icon i {
