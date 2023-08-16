@@ -1,0 +1,80 @@
+.category-wrapper {
+  width: 100%;
+  margin-top: 83px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.category-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.category-top {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.category-top div {
+  width: 20px;
+  height: 40px;
+  background-color: #db4444;
+  border-radius: 4px;
+}
+
+.category-top p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  color: #db4444;
+}
+
+.category-container h1 {
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.44px;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.categories-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.categories-container {
+  width: 260px;
+  height: 140px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #db4444;
+  margin-bottom: 70px;
+}
+
+.categories-container div i {
+  font-size: 40px;
+  color: #fff;
+}
+
+.categories-container:hover {
+  background-color: #d2d2d2;
+}
+
+.categories-container div p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  cursor: default;
+}
