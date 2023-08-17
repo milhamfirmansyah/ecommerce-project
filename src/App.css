@@ -9,5 +9,6 @@
 
 body {
   background-color: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
+  height: 3000px;
 }

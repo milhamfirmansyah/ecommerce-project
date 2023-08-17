@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/categories.css';
 import { useNavigate } from 'react-router-dom';
+import SubTitle from './SubTitle';
 
 function Categories() {
   const navigate = useNavigate();
@@ -8,10 +9,7 @@ function Categories() {
   return (
     <div className="category-wrapper">
       <div className="category-container">
-        <div className="category-top">
-          <div></div>
-          <p>Categories</p>
-        </div>
+        <SubTitle title={'Categories'}/>
         <h1>Browse by Category</h1>
 
         <div className="categories-wrapper">

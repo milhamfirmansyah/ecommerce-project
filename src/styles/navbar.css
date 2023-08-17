@@ -4,6 +4,8 @@
   border-bottom: 1px solid #d2d2d2;
   position: fixed;
   top: 0;
+  background-color: #fff;
+  z-index: 999;
 }
 
 .nav-container {
@@ -89,9 +91,8 @@
 }
 
 .cart-count {
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
+  padding: 0 5.1px;
+  border-radius: 9px;
   background-color: #db4444;
   display: flex;
   justify-content: center;

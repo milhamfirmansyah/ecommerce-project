@@ -1,0 +1,22 @@
+.subtitle {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle div {
+    width: 20px;
+    height: 40px;
+    background-color: #db4444;
+    border-radius: 4px;
+  }
+  
+  .subtitle p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    color: #db4444;
+  }
