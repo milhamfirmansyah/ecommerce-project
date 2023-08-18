@@ -3,6 +3,7 @@ import SubTitle from '../components/SubTitle';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Products from '../components/Products';
+import WhyUs from '../components/WhyUs';
 
 function Jewelery() {
 
@@ -23,6 +24,7 @@ function Jewelery() {
         <SubTitle title={'Jewelery'} header={'Jewelery Category'} />
         <Products data={data}/>
       </div>
+      <WhyUs/>
     </div>
   );
 }

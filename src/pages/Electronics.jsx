@@ -3,6 +3,7 @@ import SubTitle from '../components/SubTitle';
 import Navbar from '../components/Navbar';
 import axios from 'axios';
 import Products from '../components/Products';
+import WhyUs from '../components/WhyUs';
 
 function Electronics() {
   const [data, setData] = useState([]);
@@ -24,6 +25,7 @@ function Electronics() {
         <SubTitle title={'Electronics'} header={'Electronics Category'} />
         <Products data={data}/>
       </div>
+      <WhyUs />
     </div>
   );
 }

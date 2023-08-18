@@ -3,6 +3,7 @@ import SubTitle from '../components/SubTitle';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Products from '../components/Products';
+import WhyUs from '../components/WhyUs';
 
 function WomensClothing() {
   const [data, setData] = useState([]);
@@ -22,6 +23,7 @@ function WomensClothing() {
         <SubTitle title={"Women's Clothing"} header={"Women's Clothing Category"} />
         <Products data={data} />
       </div>
+      <WhyUs/>
     </div>
   );
 }

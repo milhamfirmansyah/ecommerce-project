@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import SubTitle from '../components/SubTitle';
 import Products from '../components/Products';
 import axios from 'axios';
+import WhyUs from '../components/WhyUs';
 
 function MensClothing() {
 
@@ -22,6 +23,7 @@ function MensClothing() {
         <SubTitle title={"Men's Clothing"} header={"Men's Clothing Category"} />
         <Products data={data}/>
       </div>
+      <WhyUs/>
     </div>
   )
 }
