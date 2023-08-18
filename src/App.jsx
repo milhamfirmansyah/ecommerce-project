@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import SignUp from './pages/SignUp';
 import Electronics from './pages/Electronics';
-import Jewelry from './pages/Jewelry';
+import Jewelery from './pages/Jewelery';
 import MensClothing from './pages/MensClothing';
 import WomensClothing from './pages/WomensClothing';
 
@@ -23,7 +23,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="sign-up" element={<SignUp />} />
           <Route path="electronics" element={<Electronics />} />
-          <Route path="jewelry" element={<Jewelry />} />
+          <Route path="jewelery" element={<Jewelery />} />
           <Route path="mens-clothing" element={<MensClothing />} />
           <Route path="womens-clothing" element={<WomensClothing />} />
         </Routes>

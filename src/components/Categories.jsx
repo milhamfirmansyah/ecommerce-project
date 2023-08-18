@@ -19,7 +19,7 @@ function Categories() {
               <p>Electronics</p>
             </div>
           </div>
-          <div className="categories-container" onClick={() => navigate('/jewelry')}>
+          <div className="categories-container" onClick={() => navigate('/jewelery')}>
             <div>
               <i class="bi bi-watch"></i>
             </div>

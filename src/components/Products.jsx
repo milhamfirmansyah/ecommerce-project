@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/products.css'
+import '../styles/products.css';
 
-function Products({data}) {
+function Products({ data }) {
   return (
     <div className="products-wrapper">
       {data.map((item) => (
