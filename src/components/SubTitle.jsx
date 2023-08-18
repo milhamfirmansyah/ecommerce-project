@@ -1,11 +1,14 @@
 import React from 'react';
-import '../styles/subtitle.css'
+import '../styles/subtitle.css';
 
-function SubTitle({title}) {
+function SubTitle({ title, header }) {
   return (
-    <div className="subtitle">
-      <div></div>
-      <p>{title}</p>
+    <div>
+      <div className="subtitle">
+        <div></div>
+        <p>{title}</p>
+      </div>
+      <h1 className='title-header'>{header}</h1>
     </div>
   );
 }

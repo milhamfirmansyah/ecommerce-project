@@ -9,9 +9,7 @@ function Categories() {
   return (
     <div className="category-wrapper">
       <div className="category-container">
-        <SubTitle title={'Categories'}/>
-        <h1>Browse by Category</h1>
-
+        <SubTitle title={'Categories'} header={'Browse By Category'}/>
         <div className="categories-wrapper">
           <div className="categories-container" onClick={() => navigate('/electronics')}>
             <div>
