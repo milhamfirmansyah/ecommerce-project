@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import axios from 'axios';
 import Products from '../components/Products';
 import WhyUs from '../components/WhyUs';
+import Footer from '../components/Footer';
 
 function Electronics() {
   const [data, setData] = useState([]);
@@ -22,11 +23,12 @@ function Electronics() {
   return (
     <div style={{ width: '100%' }}>
       <Navbar/>
-      <div style={{ maxWidth: '1170px', margin: '0 auto' }}>
+      <div style={{ maxWidth: '1170px', margin: '0 auto', paddingTop: '83px' }}>
         <SubTitle title={'Electronics'} header={'Electronics Category'} />
         <Products data={data}/>
       </div>
       <WhyUs />
+      <Footer/>
     </div>
   );
 }

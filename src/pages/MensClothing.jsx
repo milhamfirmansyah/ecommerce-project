@@ -4,6 +4,7 @@ import Products from '../components/Products';
 import axios from 'axios';
 import WhyUs from '../components/WhyUs';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function MensClothing() {
 
@@ -21,11 +22,12 @@ function MensClothing() {
   return (
     <div style={{ width: '100%' }}>
       <Navbar/>
-      <div style={{ maxWidth: '1170px', margin: '0 auto' }}>
+      <div style={{ maxWidth: '1170px', margin: '0 auto', paddingTop: '83px' }}>
         <SubTitle title={"Men's Clothing"} header={"Men's Clothing Category"} />
         <Products data={data}/>
       </div>
       <WhyUs/>
+      <Footer/>
     </div>
   )
 }

@@ -1,0 +1,94 @@
+.footer-wrapper {
+  width: 100%;
+  padding: 80px 0 24px 0;
+  background-color: black;
+  font-family: Poppins;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 76px;
+}
+
+.footer-shoped {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.footer-container p,
+.footer-account a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.footer-account {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-support {
+  width: 175px;
+}
+
+.footer-download p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.download-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.qr {
+  width: 76px;
+}
+
+.download-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.download-container div img {
+  width: 110px;
+}
+
+.socmed {
+  display: flex;
+  gap: 24px;
+}
+
+.socmed i {
+  width: 24px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
