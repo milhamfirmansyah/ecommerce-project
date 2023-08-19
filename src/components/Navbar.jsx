@@ -1,12 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import '../styles/navbar.css';
-import '../App.css'
+import '../App.css';
 import { useState, useRef } from 'react';
+import { useSelector } from 'react-redux';
 
 function Navbar() {
   const [isSearchIconVisible, setSearchIconVisible] = useState(true);
   const inputRef = useRef(null);
+  const navigate = useNavigate();
 
   const toggleSearchIcon = () => {
     setSearchIconVisible(false);
@@ -16,6 +18,10 @@ function Navbar() {
   const handleInputBlur = () => {
     setSearchIconVisible(true);
   };
+
+  //cart
+  const { cart } = useSelector((state) => state.products);
+  console.log(cart);
 
   return (
     <div className="nav-wrapper">
@@ -39,10 +45,10 @@ function Navbar() {
             </div>
           </div>
 
-          <div className="cart-icon">
+          <div className="cart-icon" onClick={() => navigate('/cart')}>
             <i class="bi bi-cart3"></i>
             <div className="cart-count">
-              <div>0</div>
+              <div>{cart.length}</div>
             </div>
           </div>
         </div>

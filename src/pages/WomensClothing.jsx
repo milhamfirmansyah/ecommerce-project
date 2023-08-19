@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Products from '../components/Products';
 import WhyUs from '../components/WhyUs';
+import Navbar from '../components/Navbar';
 
 function WomensClothing() {
   const [data, setData] = useState([]);
@@ -19,6 +20,7 @@ function WomensClothing() {
 
   return (
     <div style={{ width: '100%' }}>
+      <Navbar/>
       <div style={{ maxWidth: '1170px', margin: '0 auto' }}>
         <SubTitle title={"Women's Clothing"} header={"Women's Clothing Category"} />
         <Products data={data} />

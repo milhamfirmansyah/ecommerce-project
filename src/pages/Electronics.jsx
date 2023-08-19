@@ -21,6 +21,7 @@ function Electronics() {
 
   return (
     <div style={{ width: '100%' }}>
+      <Navbar/>
       <div style={{ maxWidth: '1170px', margin: '0 auto' }}>
         <SubTitle title={'Electronics'} header={'Electronics Category'} />
         <Products data={data}/>

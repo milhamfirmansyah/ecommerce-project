@@ -84,6 +84,7 @@
 
 .cart-icon {
   position: relative;
+  cursor: pointer;
 }
 
 .cart-icon i {

@@ -1,7 +1,11 @@
 import React from 'react';
 import '../styles/products.css';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../redux/slices/productsSlice';
 
 function Products({ data }) {
+  const dispatch = useDispatch();
+
   return (
     <div className="products-wrapper">
       {data.map((item) => (
@@ -14,7 +18,7 @@ function Products({ data }) {
               <p className="product-category-p">{item.category}</p>
             </div>
             <div className="cart-product-container">
-              <div>
+              <div onClick={() => dispatch(addToCart(item.id))}>
                 <i class="bi bi-cart3"></i>
               </div>
             </div>
