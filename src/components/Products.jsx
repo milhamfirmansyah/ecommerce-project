@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/products.css';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../redux/slices/productsSlice';
+import { Bar } from './Rating';
 
 function Products({ data }) {
   const dispatch = useDispatch();
@@ -25,7 +26,10 @@ function Products({ data }) {
           </div>
           <h3>{item.title}</h3>
           <p className="price">${item.price}</p>
-          <p className="rating">Rating</p>
+          <div className="rating">
+            <Bar rate={item.rating.rate} />
+            <p>({item.rating.count})</p>
+          </div>
         </div>
       ))}
     </div>
