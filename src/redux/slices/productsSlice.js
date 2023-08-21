@@ -28,6 +28,21 @@ const productsSlice = createSlice({
       }
       localStorage.setItem('cart', JSON.stringify(state.cart));
     },
+    decrementQuantity: (state, action) => {
+      const productId = action.payload;
+      const item = state.cart.find((item) => item.id === productId);
+
+      if (item && item.quantity > 1) {
+        item.quantity -= 1;
+        localStorage.setItem('cart', JSON.stringify(state.cart));
+      }
+    },
+    removeToCart: (state, action) => {
+      const productId = action.payload;
+      const updatedCart = state.cart.filter((item) => item.id !== productId);
+      state.cart = updatedCart;
+      localStorage.setItem('cart', JSON.stringify(state.cart));
+    },
   },
   extraReducers: {
     [fetchProductsData.fulfilled]: (state, action) => {
@@ -37,5 +52,5 @@ const productsSlice = createSlice({
   },
 });
 
-export const { addToCart } = productsSlice.actions;
+export const { addToCart, decrementQuantity, removeToCart } = productsSlice.actions;
 export default productsSlice.reducer;

@@ -11,7 +11,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-exclusive">
           <h3 className="footer-shoped">Shoped</h3>
-          <p className="footer-title">Subscribe</p>
+          <h3 className="footer-title">Subscribe</h3>
           <p>Get 10% off your first order</p>
           <input type="email" name="" id="" />
         </div>

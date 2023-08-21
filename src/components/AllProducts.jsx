@@ -13,11 +13,13 @@ function AllProducts() {
     dispatch(fetchProductsData(data));
   }, []);
 
+  // console.log(data);
+
   return (
     <div className="all-products-wrapper">
       <div className="all-products-container">
-        <SubTitle title={'All Products'} header={'Explore All Products'}/>
-        <Products data={data}/>
+        <SubTitle title={'All Products'} header={'Explore All Products'} />
+        <Products data={data} />
       </div>
     </div>
   );

@@ -47,7 +47,7 @@ function Navbar() {
 
           <div className="cart-icon" onClick={() => navigate('/cart')}>
             <i class="bi bi-cart3"></i>
-            <div className="cart-count">
+            <div className={cart.length < 1 ? 'cart-null' : 'cart-count'}>
               <div>{cart.length}</div>
             </div>
           </div>
