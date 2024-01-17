@@ -59,6 +59,29 @@
   cursor: pointer;
 }
 
+.cart-dropdown-container{
+  position: relative;
+}
+
+.cart-dropdown{
+  display: none;
+  position: absolute;
+  background-color: #db4444;
+  width: 70px;
+  padding: 4px;
+  border-radius: 4px;
+  z-index: 20;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  top: -32px;
+  left: -4px;
+}
+
+.cart-product-container:hover  .cart-dropdown{
+  display: block;
+}
+
 .cart-product-container div i {
   font-size: 20px;
 }

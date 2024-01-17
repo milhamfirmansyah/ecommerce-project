@@ -8,13 +8,13 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 function Jewelery() {
-
   const [data, setData] = useState([]);
 
   const getData = async () => {
     const res = await axios.get('https://fakestoreapi.com/products/category/jewelery');
     setData(res.data);
   };
+  console.log(data);
 
   useEffect(() => {
     getData();
@@ -22,13 +22,13 @@ function Jewelery() {
 
   return (
     <div style={{ width: '100%' }}>
-      <Navbar/>
+      <Navbar />
       <div style={{ maxWidth: '1170px', margin: '0 auto', paddingTop: '83px' }}>
         <SubTitle title={'Jewelery'} header={'Jewelery Category'} />
-        <Products data={data}/>
+        <Products data={data} />
       </div>
-      <WhyUs/>
-      <Footer/>
+      <WhyUs />
+      <Footer />
     </div>
   );
 }

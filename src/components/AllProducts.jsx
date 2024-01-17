@@ -13,7 +13,7 @@ function AllProducts() {
     dispatch(fetchProductsData(data));
   }, []);
 
-  // console.log(data);
+  console.log(data);
 
   return (
     <div className="all-products-wrapper">

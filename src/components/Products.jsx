@@ -19,8 +19,9 @@ function Products({ data }) {
               <p className="product-category-p">{item.category}</p>
             </div>
             <div className="cart-product-container">
-              <div onClick={() => dispatch(addToCart(item.id))}>
+              <div onClick={() => dispatch(addToCart(item.id))} className='cart-dropdown-container'>
                 <i class="bi bi-cart3"></i>
+                <div className='cart-dropdown'>Add to cart</div>
               </div>
             </div>
           </div>
