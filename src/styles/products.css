@@ -67,12 +67,12 @@
   display: none;
   position: absolute;
   background-color: #db4444;
-  width: 70px;
+  width: 60px;
   padding: 4px;
   border-radius: 4px;
   z-index: 20;
   color: #fff;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   top: -32px;
   left: -4px;
